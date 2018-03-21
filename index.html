@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -45,7 +46,7 @@
                             <div class="row">
                                 <div class="input-field col s9">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="date_pick" type="text" class="datepicker validate"
+                                    <input id="date_pick" type="text" class="datepicker"
                                            placeholder="Select Date">
                                     <label for="date_pick">Deadline Day</label>
                                 </div>
@@ -54,14 +55,14 @@
                                 <div class="input-field col s9">
                                     <i class="material-icons prefix">description</i>
                                     <textarea id="description" class="materialize-textarea" data-length="70"
-                                              placeholder="This is Optional"></textarea>
-                                    <label for="description">Description</label>
+                                              placeholder="Short Description"></textarea>
+                                    <label for="description">Description (Optional)</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s9">
                                     <i class="material-icons prefix prior_icon">info</i>
-                                    <select class="validate">
+                                    <select>
                                         <option value="" disabled selected>Select Priority</option>
                                         <option value="1">Very High</option>
                                         <option value="2">High</option>
@@ -76,6 +77,7 @@
                     </div>
 
                     <div class="modal-footer">
+                        <a href="#!" class="waves-effect waves-light btn modal-action modal-close">Cancel</a>
                         <a href="#!" class="waves-effect waves-light btn modal-action modal-close submit_btn">Add Task</a>
                     </div>
 
@@ -112,7 +114,7 @@
             <!--<div class="col s12 m3">-->
                 <!--<div class="card orange lighten-2 hoverable">-->
                     <!--<div class="card-content white-text">-->
-                        <!--&lt;!&ndash;<span class="card-title">Complete Project</span>&ndash;&gt;-->
+                        <!--<span class="card-title">Complete Project</span>-->
                     <!--</div>-->
                 <!--</div>-->
             <!--</div>-->
