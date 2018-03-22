@@ -18,8 +18,13 @@ body{
     background-color: #37474f
 }
 
+.cardTask{
+    min-height: 198px;
+    cursor: move;
+}
+
 .icon{
-    font-size: 170%;
+    font-size: 160%;
     margin-top: 2%;
 }
 

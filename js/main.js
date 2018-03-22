@@ -1,12 +1,13 @@
-// TODO Make MODAL UNDISMISSIBLE - Done
-// TODO ADD CANCEL BUTTON TO MODAL - Done
-// TODO CLEAR VALUES AFTER ADDING TASK - Done
-// TODO DATE SHOULD NOT BE IN PAST - Done
-// TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDNT LOOK EMPTY
-// TODO ADD MINIMUM $ MAXIMUM HEIGHT TO TASKS CARD
-// TODO OPTION TO SELECT COLOR OF TASKS CARD
+//  Make MODAL UNDISMISSIBLE - Done
+//  ADD CANCEL BUTTON TO MODAL - Done
+//  CLEAR VALUES AFTER ADDING TASK - Done
+//  DATE SHOULD NOT BE IN PAST - Done
+//  ADD MINIMUM $ MAXIMUM HEIGHT TO TASKS CARD - Done
 // TODO DELETE TASKS OPTION
 // TODO EDIT TASKS OPTION
+// TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDNT LOOK EMPTY
+// TODO OPTION TO SELECT COLOR OF TASKS CARD
+// TODO TRY TO FIX THAT OVERFLOWING BUG WHEN NO SPACES ARE USED
 // TODO UNDO TASK CREATION WITH TOAST
 // TODO TIMEPICKER FOR DEADLINE OF TASK
 // TODO ADD FLOATING BUTTON FOR ADDING TASKS
@@ -39,6 +40,7 @@ $(document).ready(function () {
         format: 'mm/dd/yyyy'
     });
 
+
     // $('.timepicker').pickatime({
     //     default: 'now', // Set default time: 'now', '1:30AM', '16:30'
     //     fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
@@ -70,8 +72,9 @@ function createDivStructure() {
     card_sub_div = document.createElement('div');
 
     card.className = 'col s12 m3';
-    card_div.className = 'card orange lighten-2 hoverable';
-    card_sub_div.className = 'card-content white-text card_content';
+    card_div.className = 'card orange lighten-2 hoverable cardTask';
+    card_div.setAttribute("draggable", "true");
+    card_sub_div.className = 'card-content white-text';
 
     card_div.appendChild(card_sub_div);
     card.appendChild(card_div);
@@ -97,7 +100,7 @@ function addTask() {
     card_sub_div.appendChild(card_des);
     card_sub_div.appendChild(card_date);
     card_sub_div.appendChild(card_priority);
-    task_card.appendChild(card)
+    task_card.appendChild(card);
 }
 
 // --------------------------------  Clears Values After Task Creation -------------------------------------
@@ -130,7 +133,7 @@ function form_validator() {
         submitBtn.classList.remove('modal-close')
 
     } else if (priority.value === '') {
-        Materialize.toast('Please Add Priority', 2000, 'rounded');
+        Materialize.toast('Please Select Priority', 2000, 'rounded');
         submitBtn.classList.remove('modal-close')
 
     } else {
@@ -144,15 +147,48 @@ function form_validator() {
 
 submitBtn.addEventListener('click', form_validator);
 
+function drag_drop() {
+    let dropZone = document.querySelector('.dropzone');
+    let drag = document.querySelector('.drop');
 
+    dropZone.addEventListener('dragover', function (e) {
+        e.preventDefault();
+    }, false);
 
+    drag.addEventListener('dragover', function (e) {
+        e.preventDefault();
+    }, false);
 
+    dropZone.addEventListener('dragenter', function (e) {
+        if (e.target.classList.contains('dropzone') === true) {
+            e.target.style.background = 'blue';
+            console.log('you entered the edit button');
+        }
+    }, false);
 
+    drag.addEventListener('dragenter', function (e) {
+        if (e.target.classList.contains('drop') === true) {
+            e.target.style.background = 'red';
+            console.log('you entered the delete button');
+        }
+    }, false);
 
+    dropZone.addEventListener("dragleave", function (e) {
+        if (e.target.classList.contains('dropzone') === true) {
+            e.target.style.background = '';
+            console.log('you left the edit button');
+        }
+    }, false);
 
+    drag.addEventListener("dragleave", function (e) {
+        if (e.target.classList.contains('drop') === true) {
+            e.target.style.background = '';
+            console.log('you left the delete button');
+        }
+    }, false);
+}
 
-
-
+drag_drop();
 
 
 
