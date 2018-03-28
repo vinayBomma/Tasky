@@ -3,24 +3,26 @@
 //  CLEAR VALUES AFTER ADDING TASK - Done
 //  DATE SHOULD NOT BE IN PAST - Done
 //  ADD MINIMUM $ MAXIMUM HEIGHT TO TASKS CARD - Done
-// TODO DELETE TASKS OPTION - Done
-// TODO EDIT TASKS OPTION - Done
+//  DELETE TASKS OPTION - Done
+//  EDIT TASKS OPTION - Done
 // TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDNT LOOK EMPTY
 // TODO OPTION TO SELECT COLOR OF TASKS CARD
+// TODO TIMEPICKER FOR DEADLINE OF TASK
+// TODO ADD FLOATING BUTTON FOR ADDING TASKS
+// TODO RESPONSIVE PAGE
+// TODO LOCAL STORAGE
+// TODO INDICATION ON HOW MUCH TIME LEFT BEFORE DEADLINE
 // TODO TRY TO FIX THAT OVERFLOWING BUG WHEN NO SPACES ARE USED
 // TODO UNDO TASK CREATION WITH TOAST
 // TODO FIX CONSOLE.LOG ERROR WHEN NODES ARE REMOVED WHILE EDITING OR DELETING
-// TODO TIMEPICKER FOR DEADLINE OF TASK
 // TODO CHECK FIREFOX FUNCTIONALITY OTHER BROWSERS TOO
-// TODO ADD FLOATING BUTTON FOR ADDING TASKS
+// TODO WEBMANIFEST - CHECK IT OUT
 // TODO SORTING OPTIONS
-// TODO RESPONSIVE PAGE
-// TODO LOCAL STORAGE
 // TODO TEST APP WITH COOKIE DELETER
 // TODO ANIMATIONS
 // TODO USE THAT AUTOMATIC TYPER PLUGIN
 // TODO FIX BUG WHERE MODAL OPENS SCROLLED TO THE BOTTOM
-// TODO PUNISHING FOR NOT COMPLETING BEFORE DEADLINE
+// TODO PUNISHING FOR NOT COMPLETING TASK BEFORE DEADLINE
 // TODO IMPLEMENT MODULE PATTERN
 // TODO MAKE IT A PROGRESSIVE WEB APP (PWA)
 
@@ -44,29 +46,41 @@ $(document).ready(function () {
     });
 
 
-    // $('.timepicker').pickatime({
-    //     default: 'now', // Set default time: 'now', '1:30AM', '16:30'
-    //     fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
-    //     twelvehour: false, // Use AM/PM or 24-hour format
-    //     donetext: 'OK', // text for done-button
-    //     cleartext: 'Clear', // text for clear-button
-    //     canceltext: 'Cancel', // Text for cancel-button
-    //     autoclose: false, // automatic close timepicker
-    //     ampmclickable: true, // make AM PM clickable
-    // });
+    $('.timepicker').pickatime({
+        default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+        fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+        twelvehour: true, // Use AM/PM or 24-hour format
+        donetext: 'OK', // text for done-button
+        cleartext: 'Clear', // text for clear-button
+        canceltext: 'Cancel', // Text for cancel-button
+        autoclose: false, // automatic close timepicker
+        ampmclickable: true, // make AM PM clickable
+    });
 });
 
 //----------------------------------------------------------------------------
 
 const taskName = document.getElementById('task_name');
 const deadlineDay = document.getElementById('date_pick');
+const deadlineTime = document.getElementById('time_pick');
 const description = document.getElementById('description');
 const priority = document.querySelector('select');
 const submitBtn = document.querySelector('.submit_btn');
 const task_card = document.querySelector('.tasks_card');
 const deleteTask = document.querySelector('.delete_task');
+const selectColor = document.querySelector('.selectColor');
+const colorIcon = document.querySelector('.colorIcon');
 
-let card, card_div, card_sub_div, card_title, card_des, card_date, card_priority, dragged;
+let color1 = 'red lighten-1';
+let color2 = 'blue lighten-1';
+let color3 = 'grey lighten-1';
+let color4 = 'teal lighten-1';
+let color5 = 'cyan lighten-1';
+let color6 = 'orange lighten-2';
+let color7 = 'green lighten-1';
+let color8 = 'deep-purple lighten-1';
+
+let card, card_div, card_sub_div, card_title, card_des, card_date, card_time, card_priority, dragged, userColor;
 
 // ----------------------------- Creating DIV Structure For Adding Tasks ---------------------------------------
 
@@ -76,7 +90,9 @@ function createDivStructure() {
     card_sub_div = document.createElement('div');
 
     card.className = 'col s12 m3';
-    card_div.className = 'card orange lighten-2 hoverable cardTask';
+    card_div.className = 'card hoverable cardTask ';
+    // userColor = color6;
+    // card_div.className += userColor;
     card_div.setAttribute("draggable", "true");
     card_div.setAttribute("ondragstart", "event.dataTransfer.setData('text/plain',null)");
     card_sub_div.className = 'card-content white-text';
@@ -97,15 +113,18 @@ function addTask() {
     card_date = document.createElement('p');
     card_date.appendChild(document.createTextNode('Task Ends On: ' + deadlineDay.value));
 
+    // card_time = document.createElement('p');
+    // card_time.appendChild(document.createTextNode('Ending Time: ' + deadlineTime.value));
+
     card_priority = document.createElement('p');
     card_priority.appendChild(document.createTextNode('Priority: ' + priority.value));
 
     card_sub_div.appendChild(card_title);
     card_sub_div.appendChild(card_des);
     card_sub_div.appendChild(card_date);
+    // card_sub_div.appendChild(card_time);
     card_sub_div.appendChild(card_priority);
     task_card.appendChild(card);
-
 }
 
 // ----------------------------------- Getting Data before Clear -----------------------------
@@ -114,6 +133,7 @@ function addTask() {
 //     let getTaskName = taskName.value;
 //     let getDescription = description.value;
 //     let getDeadline = deadlineDay.value;
+//     let getDeadlineTime = deadlineTime.value;
 //     let getPriority = priority.value;
 // }
 
@@ -122,9 +142,49 @@ function addTask() {
 function clear_values() {
     taskName.value = '';
     deadlineDay.value = '';
+    deadlineTime.value = '';
     description.value = '';
     priority.value = '';
 }
+
+//--------------------------------- ColorModal and Functionality ---------------------------------
+
+function colorCardModal() {
+    $('.colorIcon').click(function (e) {
+        if ((e.target.classList.contains('test') === false)) {
+            e.target.parentNode.classList.add('test');
+            userColor = e.target.classList[2];
+
+            if (userColor === 'color1') {
+                userColor = color1;
+                card_div.className += userColor;
+            } else if (userColor === 'color2') {
+                userColor = color2;
+                card_div.className += userColor;
+            } else if (userColor === 'color3') {
+                userColor = color3;
+                card_div.className += userColor;
+            } else if (userColor === 'color4') {
+                userColor = color4;
+                card_div.className += userColor;
+            } else if (userColor === 'color5') {
+                userColor = color5;
+                card_div.className += userColor;
+            } else if (userColor === 'color6') {
+                userColor = color6;
+                card_div.className += userColor;
+            } else if (userColor === 'color7') {
+                userColor = color7;
+                card_div.className += userColor;
+            } else if (userColor === 'color8') {
+                userColor = color8;
+                card_div.className += userColor;
+            }
+        }
+    })
+
+}
+
 
 // -------------------------------- Validates Inputs in Form ------------------------------------
 
@@ -144,16 +204,21 @@ function form_validator() {
 
     } else if (description.value.length > 70) {
         Materialize.toast('Description Character Length Exceeded', 2000, 'rounded');
-        submitBtn.classList.remove('modal-close')
+        submitBtn.classList.remove('modal-close');
 
     } else if (priority.value === '') {
         Materialize.toast('Please Select Priority', 2000, 'rounded');
-        submitBtn.classList.remove('modal-close')
+        submitBtn.classList.remove('modal-close');
 
     } else {
         submitBtn.classList.add('modal-close');
         createDivStructure();
+        $('#modal4').modal('open');
+        colorCardModal();
         addTask();
+        // console.log(new Date().getHours());
+        // console.log(new Date().getMinutes());
+        // console.log(deadlineTime.value);
         clear_values();
         Materialize.toast('New Task Created', 2000, 'rounded');
     }
@@ -206,6 +271,7 @@ function deleteTaskModal(e) {
     });
     $('.drop').trigger('click');
 }
+
 
 // ------------------------ Dragging & Dropping Mechanism --------------------------
 
@@ -264,7 +330,6 @@ function drag_drop() {
             e.target.style.background = '';
             editTaskModal(e);
             gettingChildData();
-
             submitBtn.addEventListener('click', function () {
                 let test = dragged.target.parentNode;
                 task_card.removeChild(test);
@@ -288,13 +353,6 @@ function drag_drop() {
 }
 
 drag_drop();
-
-
-
-
-
-
-
 
 
 

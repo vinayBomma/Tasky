@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -21,23 +21,24 @@
 
         <!--------------------------------------- Edit Task Icon -------------------------------->
         <div class="col s1 icon center-align dropzone">
-            <i class="material-icons tooltipped icon dropzone" data-position="bottom" data-delay="50"
+            <i class="material-icons tooltipped icon dropzone userSelect" data-position="bottom" data-delay="50"
                data-tooltip="Edit Task">edit</i>
         </div>
 
         <!--------------------------------------- Delete Task Icon -------------------------------------->
         <div class="col s1 icon center-align drop">
-            <i class="material-icons tooltipped icon drop" data-position="bottom" data-delay="50" data-tooltip="Delete Task">delete</i>
+            <i class="material-icons tooltipped icon drop userSelect" data-position="bottom" data-delay="50"
+               data-tooltip="Delete Task">delete</i>
         </div>
 
 
         <div class="col s8 center-align">
-            <h3>Tasky</h3>
+            <h3 class="userSelect">Tasky</h3>
         </div>
 
         <!----------------------------------- Add Task Icon ------------------------------->
         <div class="col s1 icon center-align">
-            <i class="material-icons modal-trigger tooltipped icon" data-target="modal" href="#modal1"
+            <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal1"
                data-position="left" data-delay="50" data-tooltip="Add a Task">add</i>
 
 
@@ -61,6 +62,14 @@
                                 <input id="date_pick" type="text" class="datepicker"
                                        placeholder="Select Date">
                                 <label for="date_pick">Deadline Day</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s9">
+                                <i class="material-icons prefix">date_range</i>
+                                <input id="time_pick" type="text" class="timepicker"
+                                       placeholder="Select Time">
+                                <label for="time_pick">Deadline Time</label>
                             </div>
                         </div>
                         <div class="row">
@@ -90,7 +99,6 @@
 
                 <div class="modal-footer">
                     <a href="#!" class="waves-effect waves-light btn modal-action modal-close">Cancel</a>
-                    <!--<a class="waves-effect waves-light btn">Select Color</a>-->
                     <a href="#!" class="waves-effect waves-light btn modal-action modal-close submit_btn"
                        type="submit" name="action">Add Task</a>
                 </div>
@@ -102,7 +110,7 @@
         <!----------------------------------- Settings Icon ------------------------------->
         <div class="col s1 icon center-align">
 
-            <i class="material-icons modal-trigger tooltipped icon" data-target="modal" href="#modal2"
+            <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal2"
                data-position="bottom"
                data-delay="50" data-tooltip="Settings">settings</i>
 
@@ -140,6 +148,31 @@
         </div>
     </div>
 
+    <!----------------------------------- Select Color Modal ------------------------------->
+
+    <div class="row">
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <h5 class="center-align">Select Color</h5>
+                <div class="row">
+                    <div class="col s4 offset-s4">
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color1">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color2">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color3">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color4">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color5">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color6">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color7">lens</i></a>
+                        <a href="#" class="colorIcon"><i class="material-icons userSelect color8">lens</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="waves-effect waves-light btn modal-action modal-close">Random</a>
+                <a href="#!" class="waves-effect waves-light btn modal-action modal-close selectColor">Select</a>
+            </div>
+        </div>
+    </div>
 
 </header>
 
@@ -150,4 +183,4 @@
 <script src="js/plugins.js"></script>
 
 </body>
-</html>`
+</html>

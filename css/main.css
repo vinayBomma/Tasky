@@ -1,35 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
-    background-color: #555555;
+    background-color: #263238;
     color: black;
 }
 
-.tasks_card{
+.tasks_card {
     margin-left: 2%;
     margin-right: 2%;
     color: black;
     height: 105%;
-    background-color: #37474f
+    background-color: #37474f;
 }
 
-.cardTask{
+.cardTask {
     min-height: 198px;
     cursor: move;
 }
 
-.icon{
+.icon {
     font-size: 160%;
     margin-top: 2%;
 }
 
-.prior_icon{
+.prior_icon {
     margin-left: -47%;
 }
 
+.userSelect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 3rem;
+}
 
+.test:active,
+.test:hover{
+    padding-top: 30px;
+    border: dashed 3px;
+}
+
+.color1{
+    color: #ef5350;
+}
+.color2{
+    color: #42a5f5;
+}
+.color3{
+    color: #bdbdbd;
+}
+.color4{
+    color: #26a69a;
+}
+.color5{
+    color: #26c6da;
+}
+.color6{
+    color: #ffb74d;
+}
+.color7{
+    color: #66bb6a;
+}
+.color8{
+    color: #7e57c2;
+}
