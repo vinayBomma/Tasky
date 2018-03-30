@@ -5,8 +5,8 @@
 //  ADD MINIMUM $ MAXIMUM HEIGHT TO TASKS CARD - Done
 //  DELETE TASKS OPTION - Done
 //  EDIT TASKS OPTION - Done
+//  OPTION TO SELECT COLOR OF TASKS CARD - Done
 // TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDNT LOOK EMPTY
-// TODO OPTION TO SELECT COLOR OF TASKS CARD
 // TODO TIMEPICKER FOR DEADLINE OF TASK
 // TODO ADD FLOATING BUTTON FOR ADDING TASKS
 // TODO RESPONSIVE PAGE
@@ -68,8 +68,6 @@ const priority = document.querySelector('select');
 const submitBtn = document.querySelector('.submit_btn');
 const task_card = document.querySelector('.tasks_card');
 const deleteTask = document.querySelector('.delete_task');
-const selectColor = document.querySelector('.selectColor');
-const colorIcon = document.querySelector('.colorIcon');
 
 let color1 = 'red lighten-1';
 let color2 = 'blue lighten-1';
@@ -80,7 +78,8 @@ let color6 = 'orange lighten-2';
 let color7 = 'green lighten-1';
 let color8 = 'deep-purple lighten-1';
 
-let card, card_div, card_sub_div, card_title, card_des, card_date, card_time, card_priority, dragged, userColor;
+let card, card_div, card_sub_div, card_title, card_des, card_date, card_time, card_priority, dragged, userColor,
+    randomColorGen;
 
 // ----------------------------- Creating DIV Structure For Adding Tasks ---------------------------------------
 
@@ -91,8 +90,6 @@ function createDivStructure() {
 
     card.className = 'col s12 m3';
     card_div.className = 'card hoverable cardTask ';
-    // userColor = color6;
-    // card_div.className += userColor;
     card_div.setAttribute("draggable", "true");
     card_div.setAttribute("ondragstart", "event.dataTransfer.setData('text/plain',null)");
     card_sub_div.className = 'card-content white-text';
@@ -147,44 +144,65 @@ function clear_values() {
     priority.value = '';
 }
 
+//--------------------------------- Random ColorGen ---------------------------------
+
+function randomColor() {
+    randomColorGen = Math.floor(Math.random() * 8 + 1);
+    if (randomColorGen === 1) {
+        userColor = color1;
+    } else if (randomColorGen === 2) {
+        userColor = color2;
+    } else if (randomColorGen === 3) {
+        userColor = color3;
+    } else if (randomColorGen === 4) {
+        userColor = color4;
+    } else if (randomColorGen === 5) {
+        userColor = color5;
+    } else if (randomColorGen === 6) {
+        userColor = color6;
+    } else if (randomColorGen === 7) {
+        userColor = color7;
+    } else if (randomColorGen === 8) {
+        userColor = color8;
+    }
+}
+
 //--------------------------------- ColorModal and Functionality ---------------------------------
 
+
 function colorCardModal() {
+
     $('.colorIcon').click(function (e) {
         if ((e.target.classList.contains('test') === false)) {
             e.target.parentNode.classList.add('test');
             userColor = e.target.classList[2];
-
             if (userColor === 'color1') {
                 userColor = color1;
-                card_div.className += userColor;
             } else if (userColor === 'color2') {
                 userColor = color2;
-                card_div.className += userColor;
             } else if (userColor === 'color3') {
                 userColor = color3;
-                card_div.className += userColor;
             } else if (userColor === 'color4') {
                 userColor = color4;
-                card_div.className += userColor;
             } else if (userColor === 'color5') {
                 userColor = color5;
-                card_div.className += userColor;
             } else if (userColor === 'color6') {
                 userColor = color6;
-                card_div.className += userColor;
             } else if (userColor === 'color7') {
                 userColor = color7;
-                card_div.className += userColor;
             } else if (userColor === 'color8') {
                 userColor = color8;
-                card_div.className += userColor;
             }
         }
-    })
-
+    });
+    $('.selectColor').click(function () {
+        card_div.className += userColor;
+    });
+    $('.randomColor').click(function () {
+        randomColor();
+        card_div.className += userColor;
+    });
 }
-
 
 // -------------------------------- Validates Inputs in Form ------------------------------------
 
@@ -255,7 +273,7 @@ function editTaskModal(e) {
     e.target.setAttribute('data-target', 'modal');
     e.target.setAttribute('href', '#modal1');
     $('.modal').modal({
-        dismissible: true,
+        dismissible: false,
     });
     $('.dropzone').trigger('click');
 }
