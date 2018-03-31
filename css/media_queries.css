@@ -1,0 +1,159 @@
+/*@media only screen and (max-width: 2560px){*/
+    /*.icon {*/
+        /*font-size: 260%;*/
+        /*margin-top: 2%;*/
+    /*}*/
+
+    /*.name_tasky{*/
+        /*font-size: 800%;*/
+    /*}*/
+
+    /*#modal1{*/
+        /*width: 160rem;*/
+        /*height: 100rem;*/
+    /*}*/
+/*}*/
+
+
+@media only screen and (max-width: 1440px){
+    .icon {
+         font-size: 180%;
+         margin-top: 5%;
+     }
+
+    .name_tasky{
+        font-size: 300%;
+    }
+
+    #modal1{
+        width: 50rem;
+        height: 140rem;
+    }
+
+    #edit_icon{
+        float: left;
+        margin-left: 5%;
+    }
+
+    #del_icon{
+        float: right;
+        margin-right: 10%;
+    }
+
+    #sett_icon{
+        float: right;
+        margin-right: 10%;
+    }
+
+    #add_icon{
+        float: left;
+        margin-left: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px){
+    #edit_icon{
+        float: left;
+        margin-left: 10%;
+    }
+
+    #del_icon{
+        float: right;
+        margin-right: 10%;
+    }
+
+    #sett_icon{
+        float: right;
+        margin-right: 10%;
+    }
+
+    #add_icon{
+        float: left;
+        margin-left: 10%;
+    }
+
+    .cardTask{
+        min-height: 215px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #edit_icon{
+        float: left;
+        margin-left: 2%;
+    }
+
+    #del_icon{
+        float: right;
+        margin-right: 2%;
+    }
+
+    #sett_icon{
+        float: right;
+        margin-right: 2%;
+    }
+
+    #add_icon{
+        float: left;
+        margin-left: 2%;
+    }
+
+    .icon {
+        font-size: 160%;
+        margin-top: 10%;
+    }
+
+    .name_tasky{
+        font-size: 250%;
+    }
+
+    #modal1{
+        width: 40rem;
+        height: 100rem;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+
+    .icon {
+        font-size: 130%;
+        margin-top: 5%;
+    }
+    .name_tasky{
+        font-size: 140%;
+    }
+    #modal1{
+        width: 25rem;
+        height: 140rem;
+    }
+
+    #edit_icon{
+        float: left;
+    }
+
+    #del_icon{
+        float: right;
+    }
+
+    #sett_icon{
+        float: right;
+        margin-right: 10%;
+    }
+
+    #add_icon{
+        float: left;
+        margin-left: 10%;
+    }
+
+    .cardTask{
+        min-height: 250px;
+    }
+}
+
+
+/*@media only screen and (max-width: 375px){*/
+
+/*}*/

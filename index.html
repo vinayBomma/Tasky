@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media_queries.css">
     <link rel="manifest" href="site.webmanifest">
 </head>
 
@@ -20,100 +21,106 @@
 <header>
     <div class="row">
 
-        <!--------------------------------------- Edit Task Icon -------------------------------->
-        <div class="col s1 icon center-align dropzone">
-            <i class="material-icons tooltipped icon dropzone userSelect" data-position="bottom" data-delay="50"
-               data-tooltip="Edit Task">edit</i>
+        <div class="col s3" style="background-color: red">
+
+            <!--------------------------------------- Edit Task Icon -------------------------------->
+            <div class="col icon center-align dropzone" id="edit_icon">
+                <i class="material-icons tooltipped icon dropzone userSelect" data-position="bottom" data-delay="50"
+                   data-tooltip="Edit Task">edit</i>
+            </div>
+
+            <!--------------------------------------- Delete Task Icon -------------------------------------->
+            <div class="col icon center-align drop" id="del_icon">
+                <i class="material-icons tooltipped icon drop userSelect" data-position="bottom" data-delay="50"
+                   data-tooltip="Delete Task">delete</i>
+            </div>
+
         </div>
 
-        <!--------------------------------------- Delete Task Icon -------------------------------------->
-        <div class="col s1 icon center-align drop">
-            <i class="material-icons tooltipped icon drop userSelect" data-position="bottom" data-delay="50"
-               data-tooltip="Delete Task">delete</i>
-        </div>
 
-
-        <div class="col s8 center-align">
-            <h3 class="userSelect">Tasky</h3>
+        <div class="col s6 center-align" style="background-color: cyan">
+            <h3 class="userSelect name_tasky">Tasky</h3>
         </div>
 
         <!----------------------------------- Add Task Icon ------------------------------->
-        <div class="col s1 icon center-align">
-            <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal1"
-               data-position="left" data-delay="50" data-tooltip="Add a Task">add</i>
+        <div class="col s3" style="background-color: blue">
+            <div class="col icon center-align" id="add_icon">
+                <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal1"
+                   data-position="left" data-delay="50" data-tooltip="Add a Task">add</i>
 
 
-            <!--------------------------------------- Add Task Modal ------------------------------------------>
+                <!--------------------------------------- Add Task Modal ------------------------------------------>
 
 
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <form>
-                        <div class="row">
-                            <div class="input-field col s9">
-                                <i class="material-icons prefix">assignment</i>
-                                <input id="task_name" type="text" class="validate" name="taskname"
-                                       placeholder="Task Name" required>
-                                <label for="task_name">Task</label>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s9">
+                                    <i class="material-icons prefix">assignment</i>
+                                    <input id="task_name" type="text" class="validate" name="taskname"
+                                           placeholder="Task Name" required>
+                                    <label for="task_name">Task</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s9">
-                                <i class="material-icons prefix">date_range</i>
-                                <input id="date_pick" type="text" class="datepicker"
-                                       placeholder="Select Date">
-                                <label for="date_pick">Deadline Day</label>
+                            <div class="row">
+                                <div class="input-field col s9">
+                                    <i class="material-icons prefix">date_range</i>
+                                    <input id="date_pick" type="text" class="datepicker"
+                                           placeholder="Select Date">
+                                    <label for="date_pick">Deadline Day</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s9">
-                                <i class="material-icons prefix">date_range</i>
-                                <input id="time_pick" type="text" class="timepicker"
-                                       placeholder="Select Time">
-                                <label for="time_pick">Deadline Time</label>
+                            <div class="row">
+                                <div class="input-field col s9">
+                                    <i class="material-icons prefix">date_range</i>
+                                    <input id="time_pick" type="text" class="timepicker"
+                                           placeholder="Select Time">
+                                    <label for="time_pick">Deadline Time</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s9">
-                                <i class="material-icons prefix">description</i>
-                                <textarea id="description" class="materialize-textarea" data-length="70"
-                                          placeholder="Short Description"></textarea>
-                                <label for="description">Description (Optional)</label>
+                            <div class="row">
+                                <div class="input-field col s9">
+                                    <i class="material-icons prefix">description</i>
+                                    <textarea id="description" class="materialize-textarea" data-length="70"
+                                              placeholder="Short Description"></textarea>
+                                    <label for="description">Description (Optional)</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s9">
-                                <i class="material-icons prefix prior_icon">info</i>
-                                <select>
-                                    <option value="" disabled selected>Select Priority</option>
-                                    <option value="1">Very High</option>
-                                    <option value="2">High</option>
-                                    <option value="3">Medium</option>
-                                    <option value="4">Low</option>
-                                    <option value="5">Very Low</option>
-                                </select>
-                                <label>Priority</label>
+                            <div class="row">
+                                <div class="input-field col s9">
+                                    <i class="material-icons prefix prior_icon">info</i>
+                                    <select>
+                                        <option value="" disabled selected>Select Priority</option>
+                                        <option value="1">Very High</option>
+                                        <option value="2">High</option>
+                                        <option value="3">Medium</option>
+                                        <option value="4">Low</option>
+                                        <option value="5">Very Low</option>
+                                    </select>
+                                    <label>Priority</label>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#!" class="waves-effect waves-light btn modal-action modal-close">Cancel</a>
+                        <a href="#!" class="waves-effect waves-light btn modal-action modal-close submit_btn"
+                           type="submit" name="action">Add Task</a>
+                    </div>
+
                 </div>
-
-                <div class="modal-footer">
-                    <a href="#!" class="waves-effect waves-light btn modal-action modal-close">Cancel</a>
-                    <a href="#!" class="waves-effect waves-light btn modal-action modal-close submit_btn"
-                       type="submit" name="action">Add Task</a>
-                </div>
-
             </div>
-        </div>
 
 
-        <!----------------------------------- Settings Icon ------------------------------->
-        <div class="col s1 icon center-align">
+            <!----------------------------------- Settings Icon ------------------------------->
+            <div class="col icon center-align" id="sett_icon">
 
-            <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal2"
-               data-position="bottom"
-               data-delay="50" data-tooltip="Settings">settings</i>
+                <i class="material-icons modal-trigger tooltipped icon userSelect" data-target="modal" href="#modal2"
+                   data-position="bottom"
+                   data-delay="50" data-tooltip="Settings">settings</i>
+            </div>
 
 
             <!--------------------------------------- Settings Modal ------------------------------------------>
@@ -179,6 +186,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/DragDropTouch.js"></script>
 <script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="js/plugins.js"></script>

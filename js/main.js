@@ -6,10 +6,10 @@
 //  DELETE TASKS OPTION - Done
 //  EDIT TASKS OPTION - Done
 //  OPTION TO SELECT COLOR OF TASKS CARD - Done
-// TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDNT LOOK EMPTY
+//  ADD FLOATING BUTTON FOR ADDING TASKS - Delayed for Some Time
+//  RESPONSIVE PAGE - Done
+// TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDN'T LOOK EMPTY
 // TODO TIMEPICKER FOR DEADLINE OF TASK
-// TODO ADD FLOATING BUTTON FOR ADDING TASKS
-// TODO RESPONSIVE PAGE
 // TODO LOCAL STORAGE
 // TODO INDICATION ON HOW MUCH TIME LEFT BEFORE DEADLINE
 // TODO TRY TO FIX THAT OVERFLOWING BUG WHEN NO SPACES ARE USED
@@ -78,7 +78,7 @@ let color6 = 'orange lighten-2';
 let color7 = 'green lighten-1';
 let color8 = 'deep-purple lighten-1';
 
-let card, card_div, card_sub_div, card_title, card_des, card_date, card_time, card_priority, dragged, userColor,
+let card, card_div, card_sub_div, card_title, card_des, card_date, card_priority, dragged, userColor,
     randomColorGen;
 
 // ----------------------------- Creating DIV Structure For Adding Tasks ---------------------------------------
@@ -88,7 +88,14 @@ function createDivStructure() {
     card_div = document.createElement('div');
     card_sub_div = document.createElement('div');
 
-    card.className = 'col s12 m3';
+    if (innerWidth <= 425) {
+        card.className = 'col s6';
+    } else if (innerWidth <= 768) {
+        card.className = 'col s12 m4';
+    } else {
+        card.className = 'col s12 m3';
+    }
+
     card_div.className = 'card hoverable cardTask ';
     card_div.setAttribute("draggable", "true");
     card_div.setAttribute("ondragstart", "event.dataTransfer.setData('text/plain',null)");
@@ -371,13 +378,6 @@ function drag_drop() {
 }
 
 drag_drop();
-
-
-
-
-
-
-
 
 
 

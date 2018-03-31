@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aee47421-37ec-4c5f-b96e-c9bc744d3624" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site.webmanifest" afterPath="$PROJECT_DIR$/site.webmanifest" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,9 +24,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="440">
+              <caret line="181" column="14" lean-forward="true" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,28 +40,26 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2900">
-              <caret line="371" column="0" lean-forward="true" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1298#2280#0" expanded="false" />
-                <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-                <element signature="n#!!block;n#addTask#0" expanded="false" />
-                <element signature="e#4407#4450#0" expanded="false" />
-                <element signature="e#5026#5054#0" expanded="false" />
+                <element signature="e#1322#2304#0" expanded="false" />
+                <element signature="e#5202#5230#0" expanded="false" />
                 <element signature="n#!!block;n#clear_values#0" expanded="false" />
                 <element signature="n#!!block;n#randomColor#0" expanded="false" />
-                <element signature="e#8667#8705#0" expanded="false" />
+                <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+                <element signature="n#!!block;n#form_validator#0" expanded="false" />
                 <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
                 <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+                <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
                 <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-                <element signature="e#10701#10730#0" expanded="false" />
-                <element signature="e#10870#10905#0" expanded="false" />
-                <element signature="e#10966#11001#0" expanded="false" />
-                <element signature="e#11143#11272#0" expanded="false" />
-                <element signature="e#11334#11458#0" expanded="false" />
-                <element signature="e#11394#11452#0" expanded="false" />
-                <element signature="e#11788#11909#0" expanded="false" />
+                <element signature="e#10877#10906#0" expanded="false" />
+                <element signature="e#11046#11081#0" expanded="false" />
+                <element signature="e#11142#11177#0" expanded="false" />
+                <element signature="e#11319#11448#0" expanded="false" />
+                <element signature="e#11510#11634#0" expanded="false" />
+                <element signature="e#11570#11628#0" expanded="false" />
+                <element signature="e#11964#12085#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,18 +68,45 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="351">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="media_queries.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/media_queries.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="156" column="46" lean-forward="true" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
+              <folding>
+                <element signature="e#283#794#0" expanded="false" />
+                <element signature="e#797#1172#0" expanded="false" />
+                <element signature="e#1175#1680#0" expanded="false" />
+                <element signature="e#1232#1285#0" expanded="false" />
+                <element signature="e#1300#1355#0" expanded="false" />
+                <element signature="e#1371#1426#0" expanded="false" />
+                <element signature="e#1441#1494#0" expanded="false" />
+                <element signature="e#1506#1563#0" expanded="false" />
+                <element signature="e#1580#1612#0" expanded="false" />
+                <element signature="e#1683#2186#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tasks</find>
       <find>icon</find>
       <find>card_prop</find>
       <find>prior</find>
@@ -106,6 +135,8 @@
       <find>selectColor</find>
       <find>modal</find>
       <find>modal4</find>
+      <find>cardTas</find>
+      <find>cardTask</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,6 +149,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/media_queries.css" />
       </list>
     </option>
   </component>
@@ -163,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,8 +213,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,6 +223,7 @@
     <property name="settings.editor.splitter.proportion" value="0.23212537" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,11 +266,12 @@
       <workItem from="1521942356160" duration="3849000" />
       <workItem from="1521964211412" duration="57761000" />
       <workItem from="1522416301581" duration="3045000" />
+      <workItem from="1522459550010" duration="13699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186560000" />
+    <option name="totallyTimeSpent" value="202424000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -283,39 +317,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
-            <element signature="n#!!block;n#clear_values#0" expanded="false" />
-            <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
-            <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
-            <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
-            <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -324,25 +336,23 @@
         <state relative-caret-position="4352">
           <caret line="256" column="12" lean-forward="false" selection-start-line="256" selection-start-column="12" selection-end-line="256" selection-end-column="12" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,7 +361,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -360,25 +376,23 @@
         <state relative-caret-position="4080">
           <caret line="240" column="34" lean-forward="true" selection-start-line="240" selection-start-column="34" selection-end-line="240" selection-end-column="34" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -387,7 +401,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="117" column="33" lean-forward="true" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -396,25 +416,23 @@
         <state relative-caret-position="51">
           <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,7 +448,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="47" lean-forward="false" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,25 +463,23 @@
         <state relative-caret-position="1938">
           <caret line="114" column="49" lean-forward="true" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,7 +488,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,25 +503,23 @@
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -568,25 +594,23 @@
         <state relative-caret-position="-1055">
           <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,7 +619,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="71" column="76" lean-forward="true" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -603,7 +633,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -612,25 +648,23 @@
         <state relative-caret-position="4352">
           <caret line="256" column="12" lean-forward="false" selection-start-line="256" selection-start-column="12" selection-end-line="256" selection-end-column="12" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,7 +673,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -648,25 +688,23 @@
         <state relative-caret-position="4080">
           <caret line="240" column="34" lean-forward="true" selection-start-line="240" selection-start-column="34" selection-end-line="240" selection-end-column="34" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -675,7 +713,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="117" column="33" lean-forward="true" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,25 +728,23 @@
         <state relative-caret-position="51">
           <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -718,7 +760,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" column="47" lean-forward="false" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,25 +775,23 @@
         <state relative-caret-position="1938">
           <caret line="114" column="49" lean-forward="true" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,7 +800,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,25 +815,23 @@
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,45 +895,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="351">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2900">
-          <caret line="371" column="0" lean-forward="true" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1298#2280#0" expanded="false" />
-            <element signature="n#!!block;n#createDivStructure#0" expanded="false" />
-            <element signature="n#!!block;n#addTask#0" expanded="false" />
-            <element signature="e#4407#4450#0" expanded="false" />
-            <element signature="e#5026#5054#0" expanded="false" />
+            <element signature="e#1322#2304#0" expanded="false" />
+            <element signature="e#5202#5230#0" expanded="false" />
             <element signature="n#!!block;n#clear_values#0" expanded="false" />
             <element signature="n#!!block;n#randomColor#0" expanded="false" />
-            <element signature="e#8667#8705#0" expanded="false" />
+            <element signature="n#!!block;n#colorCardModal#0" expanded="false" />
+            <element signature="n#!!block;n#form_validator#0" expanded="false" />
             <element signature="n#!!block;n#gettingChildData#0" expanded="false" />
             <element signature="n#!!block;n#editTaskModal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTaskModal#0" expanded="false" />
             <element signature="n#!!block;n#drag_drop#0" expanded="false" />
-            <element signature="e#10701#10730#0" expanded="false" />
-            <element signature="e#10870#10905#0" expanded="false" />
-            <element signature="e#10966#11001#0" expanded="false" />
-            <element signature="e#11143#11272#0" expanded="false" />
-            <element signature="e#11334#11458#0" expanded="false" />
-            <element signature="e#11394#11452#0" expanded="false" />
-            <element signature="e#11788#11909#0" expanded="false" />
+            <element signature="e#10877#10906#0" expanded="false" />
+            <element signature="e#11046#11081#0" expanded="false" />
+            <element signature="e#11142#11177#0" expanded="false" />
+            <element signature="e#11319#11448#0" expanded="false" />
+            <element signature="e#11510#11634#0" expanded="false" />
+            <element signature="e#11570#11628#0" expanded="false" />
+            <element signature="e#11964#12085#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/media_queries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="156" column="46" lean-forward="true" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
+          <folding>
+            <element signature="e#283#794#0" expanded="false" />
+            <element signature="e#797#1172#0" expanded="false" />
+            <element signature="e#1175#1680#0" expanded="false" />
+            <element signature="e#1232#1285#0" expanded="false" />
+            <element signature="e#1300#1355#0" expanded="false" />
+            <element signature="e#1371#1426#0" expanded="false" />
+            <element signature="e#1441#1494#0" expanded="false" />
+            <element signature="e#1506#1563#0" expanded="false" />
+            <element signature="e#1580#1612#0" expanded="false" />
+            <element signature="e#1683#2186#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="440">
+          <caret line="181" column="14" lean-forward="true" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
