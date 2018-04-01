@@ -79,7 +79,16 @@ let color7 = 'green lighten-1';
 let color8 = 'deep-purple lighten-1';
 
 let card, card_div, card_sub_div, card_title, card_des, card_date, card_priority, dragged, userColor,
-    randomColorGen;
+    randomColorGen, widthValue;
+
+if (innerWidth <= 425) {
+    widthValue = 0;
+} else if (innerWidth <= 768) {
+    widthValue = 1;
+} else if (innerWidth > 768) {
+    widthValue = 2;
+}
+
 
 // ----------------------------- Creating DIV Structure For Adding Tasks ---------------------------------------
 
@@ -88,11 +97,11 @@ function createDivStructure() {
     card_div = document.createElement('div');
     card_sub_div = document.createElement('div');
 
-    if (innerWidth <= 425) {
+    if (widthValue === 0) {
         card.className = 'col s6';
-    } else if (innerWidth <= 768) {
+    } else if (widthValue === 1) {
         card.className = 'col s12 m4';
-    } else {
+    } else if (widthValue === 2) {
         card.className = 'col s12 m3';
     }
 
@@ -133,13 +142,16 @@ function addTask() {
 
 // ----------------------------------- Getting Data before Clear -----------------------------
 
-// function data_storage() {
-//     let getTaskName = taskName.value;
-//     let getDescription = description.value;
-//     let getDeadline = deadlineDay.value;
-//     let getDeadlineTime = deadlineTime.value;
-//     let getPriority = priority.value;
-// }
+function data_storage() {
+    // let getTaskName = taskName.value;
+    // let getDescription = description.value;
+    // let getDeadline = deadlineDay.value;
+    // let getDeadlineTime = deadlineTime.value;
+    // let getPriority = priority.value;
+
+    localStorage.setItem('taskName', taskName.value);
+    console.log(localStorage.getItem('taskName'));
+}
 
 // --------------------------------  Clears Values After Task Creation -------------------------------------
 
@@ -175,7 +187,6 @@ function randomColor() {
 }
 
 //--------------------------------- ColorModal and Functionality ---------------------------------
-
 
 function colorCardModal() {
 
@@ -241,9 +252,6 @@ function form_validator() {
         $('#modal4').modal('open');
         colorCardModal();
         addTask();
-        // console.log(new Date().getHours());
-        // console.log(new Date().getMinutes());
-        // console.log(deadlineTime.value);
         clear_values();
         Materialize.toast('New Task Created', 2000, 'rounded');
     }
