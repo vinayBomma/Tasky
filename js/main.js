@@ -7,18 +7,17 @@
 //  EDIT TASKS OPTION - Done
 //  OPTION TO SELECT COLOR OF TASKS CARD - Done
 //  ADD FLOATING BUTTON FOR ADDING TASKS - Delayed for Some Time
+//  LOCAL STORAGE - Delayed for Some Time
 //  RESPONSIVE PAGE - Done
 // TODO WHEN NO TASKS ARE ADDED, THERE SHOULD BE SOME TEXT IN CENTER, SHOULDN'T LOOK EMPTY
 // TODO TIMEPICKER FOR DEADLINE OF TASK
-// TODO LOCAL STORAGE
 // TODO INDICATION ON HOW MUCH TIME LEFT BEFORE DEADLINE
 // TODO TRY TO FIX THAT OVERFLOWING BUG WHEN NO SPACES ARE USED
-// TODO UNDO TASK CREATION WITH TOAST
+// TODO Color Toasts
 // TODO FIX CONSOLE.LOG ERROR WHEN NODES ARE REMOVED WHILE EDITING OR DELETING
 // TODO CHECK FIREFOX FUNCTIONALITY OTHER BROWSERS TOO
 // TODO WEBMANIFEST - CHECK IT OUT
 // TODO SORTING OPTIONS
-// TODO TEST APP WITH COOKIE DELETER
 // TODO ANIMATIONS
 // TODO USE THAT AUTOMATIC TYPER PLUGIN
 // TODO FIX BUG WHERE MODAL OPENS SCROLLED TO THE BOTTOM
@@ -62,7 +61,7 @@ $(document).ready(function () {
 
 const taskName = document.getElementById('task_name');
 const deadlineDay = document.getElementById('date_pick');
-const deadlineTime = document.getElementById('time_pick');
+// const deadlineTime = document.getElementById('time_pick');
 const description = document.getElementById('description');
 const priority = document.querySelector('select');
 const submitBtn = document.querySelector('.submit_btn');
@@ -140,25 +139,12 @@ function addTask() {
     task_card.appendChild(card);
 }
 
-// ----------------------------------- Getting Data before Clear -----------------------------
-
-function data_storage() {
-    // let getTaskName = taskName.value;
-    // let getDescription = description.value;
-    // let getDeadline = deadlineDay.value;
-    // let getDeadlineTime = deadlineTime.value;
-    // let getPriority = priority.value;
-
-    localStorage.setItem('taskName', taskName.value);
-    console.log(localStorage.getItem('taskName'));
-}
-
 // --------------------------------  Clears Values After Task Creation -------------------------------------
 
 function clear_values() {
     taskName.value = '';
     deadlineDay.value = '';
-    deadlineTime.value = '';
+    // deadlineTime.value = '';
     description.value = '';
     priority.value = '';
 }
@@ -386,8 +372,6 @@ function drag_drop() {
 }
 
 drag_drop();
-
-
 
 
 
