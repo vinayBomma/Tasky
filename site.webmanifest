@@ -18,14 +18,19 @@
       "sizes": "72x72"
     },
     {
-      "src": "/img/task92.img",
+      "src": "/img/task96.img",
       "type": "image/png",
-      "sizes": "92x92"
+      "sizes": "96x96"
     },
     {
       "src": "/img/task144.png",
       "type": "image/png",
       "sizes": "144x144"
+    },
+    {
+      "src": "/img/task168.png",
+      "type": "image/png",
+      "sizes": "168x168"
     },
     {
       "src": "/img/task192.img",
