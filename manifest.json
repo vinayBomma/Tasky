@@ -1,7 +1,7 @@
 {
   "short_name": "Tasky",
   "name": "Tasky",
-  "display": "fullscreen",
+    "display": "standalone",
   "orientation": "portrait",
   "background": "#4256f4",
   "theme_color": "#80e5a5",
@@ -38,5 +38,5 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true"
+    "start_url": "/?homescreen=1"
 }

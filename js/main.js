@@ -139,6 +139,23 @@ function addTask() {
     task_card.appendChild(card);
 }
 
+//-----------------------------------------------------------------------
+
+function storeData(task) {
+    let test;
+    if (localStorage.getItem('test') === null) {
+        test = [];
+    } else {
+        test = JSON.parse(localStorage.getItem('test'));
+    }
+
+    test.push(task);
+    localStorage.setItem('test', JSON.stringify(test));
+
+}
+
+storeData(taskName.value);
+
 // --------------------------------  Clears Values After Task Creation -------------------------------------
 
 function clear_values() {
